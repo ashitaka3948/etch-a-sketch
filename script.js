@@ -10,6 +10,11 @@ for (let i = 0; i < 16; i++) {
     verticalDiv.className = "vertical";
     horizontalDiv.appendChild(verticalDiv);
   }
-
 }
 
+const pixels = document.querySelectorAll(".vertical");
+pixels.forEach(pixel => {
+  pixel.addEventListener('mouseover', function(event) {
+    event.target.style.backgroundColor = "red";
+  });
+});
