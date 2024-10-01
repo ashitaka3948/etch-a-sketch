@@ -1,16 +1,16 @@
 #container {
   display: flex;
+  width: 960px;
+  height: 960px;
 }
 
 .vertical {
   background-color: blue;
-  width: 20px;
-  height: 20px;
-  margin: 1px;
-  
+  flex: 1;
 }
 
 .horizontal {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
